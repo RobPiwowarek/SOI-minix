@@ -1,2 +1,2 @@
 # SOI-minix
-Altered process scheduling algorithm in minix operating system
+Proces typu USER (SYSTEM i TASK nie ruszamy) może należeć do jednej z 3 podgrup: A, B lub C. Każda podgrupa ma przypisaną własną ilość kwantów czasu procesora. Należy tak zmodyfikować przydzielanie kwantów czasu procesom aby pierwsze przydział dostawały procesy z grupy A potem z grupy B potem z grupy C. Jeżeli w danej chwili nie istnieje proces z danej grupy to należy szukać procesu z grupy kolejnej.
